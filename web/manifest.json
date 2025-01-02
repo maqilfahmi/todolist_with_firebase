@@ -1,6 +1,6 @@
 {
-    "name": "base_todolist",
-    "short_name": "base_todolist",
+    "name": "flutter_todolistfirebase",
+    "short_name": "flutter_todolistfirebase",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

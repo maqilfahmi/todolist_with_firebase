@@ -1,36 +1,22 @@
-import 'package:flutter/src/widgets/framework.dart';
-
 class Todo {
-  final String nama;
-  final String deskripsi;
+  final String uid;
+  final String title;
+  final String description;
+  final bool isComplete;
 
   Todo({
-    required this.nama,
-    required this.deskripsi,
+    required this.uid,
+    required this.title,
+    required this.description,
+    required this.isComplete,
   });
 
-  get uid => null;
-
-  get isComplete => null;
-
-  String get description => null;
-
-  String get title => null;
-
-  static Widget fromMap(id, Map<String, dynamic> data) {}
+  factory Todo.fromFirestore(Map<String, dynamic> data) {
+    return Todo(
+      title: data['title'] ?? '',
+      uid: data['uid'] ?? '',
+      description: data['description'] ?? '',
+      isComplete: data['isComplete'] ?? false,
+    );
+  }
 }
-
-List<Todo> listdata = [
-  Todo(
-    nama: 'Studi Kasus 1',
-    deskripsi: 'Membuat Program Dasar Java',
-  ),
-  Todo(
-    nama: 'Studi Kasus 2',
-    deskripsi: 'Membuat Studi Kasus List Makanan',
-  ),
-  Todo(
-    nama: 'Studi Kasus 3',
-    deskripsi: 'Membuat Aplikasi To Do List',
-  ),
-];

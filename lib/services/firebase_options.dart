@@ -30,7 +30,10 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,39 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCWUvsCsJD5pauXUmRldM1vBy0LaFAf0us',
-    appId: '1:726391711741:web:9b03348bf3b10b2a88db94',
-    messagingSenderId: '726391711741',
-    projectId: 'to-do-list-e0b8b',
-    authDomain: 'to-do-list-e0b8b.firebaseapp.com',
-    storageBucket: 'to-do-list-e0b8b.firebasestorage.app',
-    measurementId: 'G-4591PBMP0M',
+    apiKey: 'AIzaSyDKo3AC5ZicJNC6QI3wTIzUx-eDnwBPtv4',
+    appId: '1:315669862290:web:8cabda2d6b0c261b43534b',
+    messagingSenderId: '315669862290',
+    projectId: 'to-do-list-4c537',
+    authDomain: 'to-do-list-4c537.firebaseapp.com',
+    storageBucket: 'to-do-list-4c537.firebasestorage.app',
+    measurementId: 'G-HW0N252MX8',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCBe0YDpnGYCuijyn2Sb8pl4HxjYl-4vu4',
-    appId: '1:726391711741:android:ff86e4b052da315388db94',
-    messagingSenderId: '726391711741',
-    projectId: 'to-do-list-e0b8b',
-    storageBucket: 'to-do-list-e0b8b.firebasestorage.app',
+    apiKey: 'AIzaSyBT93Go7EVh0f-FhLUUQRfr2sqIW7Iajd0',
+    appId: '1:315669862290:android:6eb56a621aabfb0a43534b',
+    messagingSenderId: '315669862290',
+    projectId: 'to-do-list-4c537',
+    storageBucket: 'to-do-list-4c537.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAwBjyo4YhmWxfKtnxh_3QfwV8UCqKCTxI',
-    appId: '1:726391711741:ios:a3f80629f165720488db94',
-    messagingSenderId: '726391711741',
-    projectId: 'to-do-list-e0b8b',
-    storageBucket: 'to-do-list-e0b8b.firebasestorage.app',
-    iosBundleId: 'com.example.baseTodolist',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCWUvsCsJD5pauXUmRldM1vBy0LaFAf0us',
-    appId: '1:726391711741:web:6cec04295f09072d88db94',
-    messagingSenderId: '726391711741',
-    projectId: 'to-do-list-e0b8b',
-    authDomain: 'to-do-list-e0b8b.firebaseapp.com',
-    storageBucket: 'to-do-list-e0b8b.firebasestorage.app',
-    measurementId: 'G-7XHZ9CTGHD',
+    apiKey: 'AIzaSyA2u09gO8gZyrfGqrYorlx0lbPl6m04WhQ',
+    appId: '1:315669862290:ios:5b039864587396e943534b',
+    messagingSenderId: '315669862290',
+    projectId: 'to-do-list-4c537',
+    storageBucket: 'to-do-list-4c537.firebasestorage.app',
+    iosBundleId: 'com.example.flutterTodolistfirebase',
   );
 }
